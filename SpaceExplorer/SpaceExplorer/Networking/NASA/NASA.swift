@@ -41,7 +41,6 @@ extension NASA {
     struct API {
         static let baseURL = "https://api.nasa.gov/"
 
-        // Build route URLs.
         struct APOD: Endpoint {
             typealias ResultType = AstronomyPictureOfTheDay
             let cache = true

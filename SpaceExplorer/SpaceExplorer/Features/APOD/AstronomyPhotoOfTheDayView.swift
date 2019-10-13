@@ -1,5 +1,5 @@
 //
-//  AstronomyPhotoOfTheDayView.swift
+//  ContentView.swift
 //  SwiftYouEye
 //
 //  Created by Widyanti, Retno (AU - Melbourne) on 3/10/19.
@@ -11,7 +11,7 @@ import UIKit
 import Combine
 
 struct AstronomyPhotoOfTheDayView: View {
-    @ObservedObject var loader: APODEndpointLoader
+    @ObservedObject var loader: AstronomyPhotoOfTheDayViewModel
 
     var body: some View {
         NavigationView {
@@ -44,7 +44,7 @@ struct AstronomyPhotoOfTheDayView: View {
         }
     }
 
-    init(loader: APODEndpointLoader = APODEndpointLoader()) {
+    init(loader: AstronomyPhotoOfTheDayViewModel = AstronomyPhotoOfTheDayViewModel()) {
         self.loader = loader
     }
 

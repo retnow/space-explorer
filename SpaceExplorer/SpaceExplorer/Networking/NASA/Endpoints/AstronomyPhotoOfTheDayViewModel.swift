@@ -10,7 +10,7 @@ import SwiftUI
 import Foundation
 import Combine
 
-class APODEndpointLoader: EndpointLoader {
+class AstronomyPhotoOfTheDayViewModel: EndpointLoader {
     typealias EndpointType = NASA.API.APOD
     typealias Model = AstronomyPictureOfTheDay
 

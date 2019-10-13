@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		201B2DF7234B028B00DA089D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201B2DF6234B028B00DA089D /* MainTabView.swift */; };
 		20786878234573D600BFA49F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20786877234573D600BFA49F /* AppDelegate.swift */; };
 		2078687A234573D600BFA49F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20786879234573D600BFA49F /* SceneDelegate.swift */; };
 		2078687E234573DA00BFA49F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2078687D234573DA00BFA49F /* Assets.xcassets */; };
@@ -18,11 +19,12 @@
 		2078689723457C0700BFA49F /* NASAAPIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2078689623457C0700BFA49F /* NASAAPIAdapter.swift */; };
 		2078689923457D6700BFA49F /* DataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2078689823457D6700BFA49F /* DataAdapter.swift */; };
 		2078689B2345810600BFA49F /* EndpointLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2078689A2345810600BFA49F /* EndpointLoader.swift */; };
-		2078689E234583C900BFA49F /* APODEndpointLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2078689D234583C900BFA49F /* APODEndpointLoader.swift */; };
+		2078689E234583C900BFA49F /* AstronomyPhotoOfTheDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2078689D234583C900BFA49F /* AstronomyPhotoOfTheDayViewModel.swift */; };
 		207868A42345CC1200BFA49F /* AstronomyPhotoOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207868A32345CC1200BFA49F /* AstronomyPhotoOfTheDayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		201B2DF6234B028B00DA089D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		20786874234573D500BFA49F /* SpaceExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20786877234573D600BFA49F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20786879234573D600BFA49F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,7 +38,7 @@
 		2078689623457C0700BFA49F /* NASAAPIAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAAPIAdapter.swift; sourceTree = "<group>"; };
 		2078689823457D6700BFA49F /* DataAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAdapter.swift; sourceTree = "<group>"; };
 		2078689A2345810600BFA49F /* EndpointLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointLoader.swift; sourceTree = "<group>"; };
-		2078689D234583C900BFA49F /* APODEndpointLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODEndpointLoader.swift; sourceTree = "<group>"; };
+		2078689D234583C900BFA49F /* AstronomyPhotoOfTheDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPhotoOfTheDayViewModel.swift; sourceTree = "<group>"; };
 		207868A32345CC1200BFA49F /* AstronomyPhotoOfTheDayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstronomyPhotoOfTheDayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,10 +72,10 @@
 		20786876234573D500BFA49F /* SpaceExplorer */ = {
 			isa = PBXGroup;
 			children = (
-				207868A12345CBB400BFA49F /* Features */,
-				2078688B2345751000BFA49F /* Networking */,
 				20786877234573D600BFA49F /* AppDelegate.swift */,
 				20786879234573D600BFA49F /* SceneDelegate.swift */,
+				207868A12345CBB400BFA49F /* Features */,
+				2078688B2345751000BFA49F /* Networking */,
 				2078687D234573DA00BFA49F /* Assets.xcassets */,
 				20786882234573DA00BFA49F /* LaunchScreen.storyboard */,
 				20786885234573DA00BFA49F /* Info.plist */,
@@ -131,7 +133,7 @@
 		2078689C2345824C00BFA49F /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
-				2078689D234583C900BFA49F /* APODEndpointLoader.swift */,
+				2078689D234583C900BFA49F /* AstronomyPhotoOfTheDayViewModel.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -139,6 +141,7 @@
 		207868A12345CBB400BFA49F /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				201B2DF6234B028B00DA089D /* MainTabView.swift */,
 				207868A22345CBBA00BFA49F /* APOD */,
 			);
 			path = Features;
@@ -223,8 +226,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2078689E234583C900BFA49F /* APODEndpointLoader.swift in Sources */,
+				2078689E234583C900BFA49F /* AstronomyPhotoOfTheDayViewModel.swift in Sources */,
 				2078689723457C0700BFA49F /* NASAAPIAdapter.swift in Sources */,
+				201B2DF7234B028B00DA089D /* MainTabView.swift in Sources */,
 				20786878234573D600BFA49F /* AppDelegate.swift in Sources */,
 				2078688E234576F800BFA49F /* AstronomyPictureOfTheDay.swift in Sources */,
 				2078687A234573D600BFA49F /* SceneDelegate.swift in Sources */,

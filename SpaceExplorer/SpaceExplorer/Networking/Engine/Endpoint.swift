@@ -23,8 +23,10 @@ extension Endpoint {
         components.queryItems = query.compactMap {
             return URLQueryItem(name: $0.key, value: $0.value)
         }
-        components.queryItems?.append(
-            URLQueryItem(name: "api_key", value: "\(key)"))
+        if !key.isEmpty {
+            components.queryItems?.append(
+                URLQueryItem(name: "api_key", value: "\(key)"))
+        }
 
         return components.string
     }
