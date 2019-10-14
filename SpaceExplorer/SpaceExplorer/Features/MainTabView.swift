@@ -19,10 +19,10 @@ struct MainTabView: View {
                     Image("Astronaut")
                     Text("APOD")
                 }.tag(0)
-            Text("Hello, Earth!")
+            MarsRoverTypesView()
                 .tabItem {
                     Image("Rocket")
-                    Text("Images")
+                    Text("Mars")
                 }.tag(1)
         }
         .accentColor(Color("accent"))

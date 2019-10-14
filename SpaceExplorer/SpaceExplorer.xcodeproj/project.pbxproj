@@ -21,6 +21,14 @@
 		2078689B2345810600BFA49F /* EndpointLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2078689A2345810600BFA49F /* EndpointLoader.swift */; };
 		2078689E234583C900BFA49F /* AstronomyPhotoOfTheDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2078689D234583C900BFA49F /* AstronomyPhotoOfTheDayViewModel.swift */; };
 		207868A42345CC1200BFA49F /* AstronomyPhotoOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207868A32345CC1200BFA49F /* AstronomyPhotoOfTheDayView.swift */; };
+		208DD7CD2353F26C00A7AD7A /* MarsRoverPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208DD7CC2353F26C00A7AD7A /* MarsRoverPhotos.swift */; };
+		208DD7D0235401BC00A7AD7A /* MarsRoverManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208DD7CF235401BC00A7AD7A /* MarsRoverManifest.swift */; };
+		208DD7D2235403BB00A7AD7A /* MarsRoverName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208DD7D1235403BB00A7AD7A /* MarsRoverName.swift */; };
+		208DD7D7235407CF00A7AD7A /* MarsRoverTypesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208DD7D6235407CF00A7AD7A /* MarsRoverTypesView.swift */; };
+		208DD7DA235410C200A7AD7A /* Color+Named.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208DD7D9235410C200A7AD7A /* Color+Named.swift */; };
+		208DD7DC2354133600A7AD7A /* MarsRoverPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208DD7DB2354133600A7AD7A /* MarsRoverPhotosView.swift */; };
+		208DD7DF2354142100A7AD7A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208DD7DE2354142100A7AD7A /* CardView.swift */; };
+		208DD7E12354188800A7AD7A /* Image+Named.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208DD7E02354188800A7AD7A /* Image+Named.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +48,14 @@
 		2078689A2345810600BFA49F /* EndpointLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointLoader.swift; sourceTree = "<group>"; };
 		2078689D234583C900BFA49F /* AstronomyPhotoOfTheDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPhotoOfTheDayViewModel.swift; sourceTree = "<group>"; };
 		207868A32345CC1200BFA49F /* AstronomyPhotoOfTheDayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstronomyPhotoOfTheDayView.swift; sourceTree = "<group>"; };
+		208DD7CC2353F26C00A7AD7A /* MarsRoverPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotos.swift; sourceTree = "<group>"; };
+		208DD7CF235401BC00A7AD7A /* MarsRoverManifest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverManifest.swift; sourceTree = "<group>"; };
+		208DD7D1235403BB00A7AD7A /* MarsRoverName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverName.swift; sourceTree = "<group>"; };
+		208DD7D6235407CF00A7AD7A /* MarsRoverTypesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverTypesView.swift; sourceTree = "<group>"; };
+		208DD7D9235410C200A7AD7A /* Color+Named.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Named.swift"; sourceTree = "<group>"; };
+		208DD7DB2354133600A7AD7A /* MarsRoverPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosView.swift; sourceTree = "<group>"; };
+		208DD7DE2354142100A7AD7A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		208DD7E02354188800A7AD7A /* Image+Named.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Named.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,7 @@
 			children = (
 				20786877234573D600BFA49F /* AppDelegate.swift */,
 				20786879234573D600BFA49F /* SceneDelegate.swift */,
+				208DD7D8235410B300A7AD7A /* Extensions */,
 				207868A12345CBB400BFA49F /* Features */,
 				2078688B2345751000BFA49F /* Networking */,
 				2078687D234573DA00BFA49F /* Assets.xcassets */,
@@ -125,7 +142,8 @@
 		2078689523457BF100BFA49F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2078688D234576F800BFA49F /* AstronomyPictureOfTheDay.swift */,
+				208DD7D32354045000A7AD7A /* APOD */,
+				208DD7D42354045800A7AD7A /* Mars */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -143,6 +161,7 @@
 			children = (
 				201B2DF6234B028B00DA089D /* MainTabView.swift */,
 				207868A22345CBBA00BFA49F /* APOD */,
+				208DD7D5235405A400A7AD7A /* Mars Photos */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -153,6 +172,51 @@
 				207868A32345CC1200BFA49F /* AstronomyPhotoOfTheDayView.swift */,
 			);
 			path = APOD;
+			sourceTree = "<group>";
+		};
+		208DD7D32354045000A7AD7A /* APOD */ = {
+			isa = PBXGroup;
+			children = (
+				2078688D234576F800BFA49F /* AstronomyPictureOfTheDay.swift */,
+			);
+			path = APOD;
+			sourceTree = "<group>";
+		};
+		208DD7D42354045800A7AD7A /* Mars */ = {
+			isa = PBXGroup;
+			children = (
+				208DD7CC2353F26C00A7AD7A /* MarsRoverPhotos.swift */,
+				208DD7CF235401BC00A7AD7A /* MarsRoverManifest.swift */,
+				208DD7D1235403BB00A7AD7A /* MarsRoverName.swift */,
+			);
+			path = Mars;
+			sourceTree = "<group>";
+		};
+		208DD7D5235405A400A7AD7A /* Mars Photos */ = {
+			isa = PBXGroup;
+			children = (
+				208DD7DD2354141400A7AD7A /* Subviews */,
+				208DD7D6235407CF00A7AD7A /* MarsRoverTypesView.swift */,
+				208DD7DB2354133600A7AD7A /* MarsRoverPhotosView.swift */,
+			);
+			path = "Mars Photos";
+			sourceTree = "<group>";
+		};
+		208DD7D8235410B300A7AD7A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				208DD7D9235410C200A7AD7A /* Color+Named.swift */,
+				208DD7E02354188800A7AD7A /* Image+Named.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		208DD7DD2354141400A7AD7A /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				208DD7DE2354142100A7AD7A /* CardView.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,15 +292,23 @@
 			files = (
 				2078689E234583C900BFA49F /* AstronomyPhotoOfTheDayViewModel.swift in Sources */,
 				2078689723457C0700BFA49F /* NASAAPIAdapter.swift in Sources */,
+				208DD7D0235401BC00A7AD7A /* MarsRoverManifest.swift in Sources */,
+				208DD7E12354188800A7AD7A /* Image+Named.swift in Sources */,
 				201B2DF7234B028B00DA089D /* MainTabView.swift in Sources */,
 				20786878234573D600BFA49F /* AppDelegate.swift in Sources */,
 				2078688E234576F800BFA49F /* AstronomyPictureOfTheDay.swift in Sources */,
+				208DD7D2235403BB00A7AD7A /* MarsRoverName.swift in Sources */,
 				2078687A234573D600BFA49F /* SceneDelegate.swift in Sources */,
 				2078689323457B3000BFA49F /* Endpoint.swift in Sources */,
+				208DD7DA235410C200A7AD7A /* Color+Named.swift in Sources */,
+				208DD7DF2354142100A7AD7A /* CardView.swift in Sources */,
 				20786890234578A700BFA49F /* NASA.swift in Sources */,
+				208DD7D7235407CF00A7AD7A /* MarsRoverTypesView.swift in Sources */,
 				2078689923457D6700BFA49F /* DataAdapter.swift in Sources */,
 				207868A42345CC1200BFA49F /* AstronomyPhotoOfTheDayView.swift in Sources */,
+				208DD7CD2353F26C00A7AD7A /* MarsRoverPhotos.swift in Sources */,
 				2078689B2345810600BFA49F /* EndpointLoader.swift in Sources */,
+				208DD7DC2354133600A7AD7A /* MarsRoverPhotosView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
